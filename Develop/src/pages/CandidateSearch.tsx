@@ -54,7 +54,7 @@ const CandidateSearch = () => {
     const updatedSavedUsers = [
       ...savedUsers,
       ...candidatesToSave.filter(
-        (candidate) => !savedUsers.some((saved) => saved.login === candidate.login)
+        (candidate) => !savedUsers.some((saved: { login: string; }) => saved.login === candidate.login)
       ),
     ];
   
