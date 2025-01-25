@@ -19,20 +19,30 @@ localStorage.setItem("savedUsers", JSON.stringify(updateUsers))
   return (
     <div>
       <h1>Potential Candidates</h1>
-    {savedUsers.length > 0 ? savedUsers.map((user, index) => (
-      <div key={index}>
-        <div>  
-          <p>Image</p><img src={user.avatar_url} alt="profile picture"/>
+      {savedUsers.length > 0 ? (
+  savedUsers.map((user, index) => (
+    <div key={index} className="p-4 border-b border-gray-300">
+      <div className="flex items-center gap-4">
+        <img
+          src={user.avatar_url || 'https://via.placeholder.com/150'}
+          alt="profile picture"
+          className="w-16 h-16 rounded-full"
+        />
         <div>
-        <p>name</p>
-        <p>{user.login}</p>
+          <p className="font-semibold">{user.login}</p>
         </div>
-        </div>
-      <button onClick={() => {deleteUser(index)}}>delete</button>
       </div>
-    ))
-: 'no users yet '
-}
+      <button
+        onClick={() => deleteUser(index)}
+        className="mt-2 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+      >
+        Delete
+      </button>
+    </div>
+  ))
+) : (
+  <p>No users yet</p>
+)}
 
     
     

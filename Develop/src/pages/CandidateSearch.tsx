@@ -44,11 +44,26 @@ const CandidateSearch = () => {
   };
 
   const handleSave = async () => {
-    const savedUsers = JSON.parse(localStorage.getItem('savedUser') || '[]');
-    savedUsers.push(currentUser);
-    localStorage.setItem('savedUsers', JSON.stringify(savedUsers));
+    // Retrieve the existing saved users from localStorage
+    const savedUsers = JSON.parse(localStorage.getItem('savedUsers') || '[]');
+  
+    // Collect all candidates viewed so far, including the current user
+    const candidatesToSave = randUser.slice(0, currentIndex + 1);
+  
+    // Merge the candidates into the savedUsers list without duplicates
+    const updatedSavedUsers = [
+      ...savedUsers,
+      ...candidatesToSave.filter(
+        (candidate) => !savedUsers.some((saved) => saved.login === candidate.login)
+      ),
+    ];
+  
+    // Save the updated list to localStorage
+    localStorage.setItem('savedUsers', JSON.stringify(updatedSavedUsers));
+  
     handleNext();
   };
+  
 
   return (
     <div className="p-4">
