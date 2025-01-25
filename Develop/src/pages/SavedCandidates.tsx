@@ -9,11 +9,10 @@ useEffect(() => {
   setSavedUsers(users);
 },[] );
 
-
-const deleteUser = (index:number) => {
+const deleteUser = (index: number) => {
   const updateUsers = savedUsers.filter((_, i) => i !== index);
-  setSavedUsers(updatedUsers);
-localStorage.setItem("savedUsers", JSON.stringify(updatedUsers))
+  setSavedUsers(updateUsers);
+localStorage.setItem("savedUsers", JSON.stringify(updateUsers))
 
 }
 
