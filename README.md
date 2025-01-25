@@ -1,4 +1,9 @@
 # GitHub Profile Finder
+---
+
+## Screenshots
+*Add screenshots or GIFs here to demonstrate the application.*
+![alt text](screenshot-1.png)
 
 ## Description
 GitHub Profile Finder is an intuitive web application that allows users to search for GitHub profiles, navigate through search results, and save or remove profiles for future reference. This project combines a sleek interface with robust functionality, making it a powerful tool for developers, recruiters, or anyone interested in exploring GitHub profiles.
@@ -17,51 +22,6 @@ GitHub Profile Finder is an intuitive web application that allows users to searc
 - **Frontend**: React, TailwindCSS
 - **Backend**: Node.js, Express.js
 - **API**: GitHub REST API
-- **Database**: MongoDB (for storing saved profiles)
-
----
-
-## Usage
-1. Enter a username or keyword in the search bar to look for GitHub profiles.
-2. Use the 'Next' button to browse through additional results.
-3. Click 'Save' on profiles you wish to keep for later.
-4. View and manage saved profiles in the "Saved Profiles" section.
-
----
-
-## Screenshots
-*Add screenshots or GIFs here to demonstrate the application.*
-![alt text](screenshot-1.png)
----
-
-## Roadmap
-- Add user authentication for personalized saved lists.
-- Implement sorting and filtering for saved profiles.
-- Enable profile sharing via social media.
-
----
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m 'Add new feature'
-   ```
-4. Push the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
-
----
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
@@ -74,6 +34,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 For questions or feedback, feel free to contact:
-- **Name**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Name**: David Garcia
+- **Email**: davidspgarcia99@gmail.com
+- **GitHub**: [david-garcia1](https://github.com/david-garcia1)
