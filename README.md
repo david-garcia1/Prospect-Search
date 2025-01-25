@@ -1,12 +1,11 @@
 # GitHub Profile Finder
 
 ## Screenshots
-*Add screenshots or GIFs here to demonstrate the application.*
 ![alt text](screenshot-1.png)
 
 ---
 
-**Link** deployed site: https://searchforcandidates.netlify.app/
+**Link** to deployed site: https://searchforcandidates.netlify.app/
 
 ---
 ## Description
