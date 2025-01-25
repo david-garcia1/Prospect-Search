@@ -1,10 +1,14 @@
 # GitHub Profile Finder
----
 
 ## Screenshots
 *Add screenshots or GIFs here to demonstrate the application.*
 ![alt text](screenshot-1.png)
 
+---
+
+**Link** deployed site: https://searchforcandidates.netlify.app/
+
+---
 ## Description
 GitHub Profile Finder is an intuitive web application that allows users to search for GitHub profiles, navigate through search results, and save or remove profiles for future reference. This project combines a sleek interface with robust functionality, making it a powerful tool for developers, recruiters, or anyone interested in exploring GitHub profiles.
 
